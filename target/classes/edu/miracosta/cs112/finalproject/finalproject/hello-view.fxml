@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="edu.miracosta.cs112.finalproject.finalproject.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<SplitPane dividerPositions="0.2185929648241206" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <AnchorPane id="loginButton" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Button id="homeButton" layoutX="151.0" layoutY="32.0" mnemonicParsing="false" text="Home" />
+                <Button id="aboutUsButton" layoutX="258.0" layoutY="32.0" mnemonicParsing="false" text="About Us" />
+                <Button id="contactButton" layoutX="383.0" layoutY="32.0" mnemonicParsing="false" text="Contact" />
+                <Button layoutX="527.0" layoutY="11.0" mnemonicParsing="false" text="Login" />
+                <Label id="logoLabel" alignment="CENTER" layoutY="11.0" prefHeight="62.0" prefWidth="137.0" text="EXCLUSICAR RENTALS" textAlignment="CENTER" wrapText="true" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <ImageView id="truckImage" fitHeight="150.0" fitWidth="155.0" layoutX="67.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView id="suvImage" fitHeight="150.0" fitWidth="155.0" layoutX="393.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+                <Button id="learnMoreTruckButton" layoutX="92.0" layoutY="242.0" mnemonicParsing="false" text="Learn More..." />
+                <Button id="learnMoreSUVButton" layoutX="418.0" layoutY="242.0" mnemonicParsing="false" text="Learn More..." />
+                <Label id="carNameTruckLabel" alignment="CENTER" layoutX="67.0" layoutY="209.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
+                <Label id="carNameSUVLabel" alignment="CENTER" layoutX="393.0" layoutY="209.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
+                <Label id="carTypeTruckLabel" alignment="CENTER" layoutX="67.0" layoutY="25.0" prefHeight="31.0" prefWidth="155.0" text="Car Type" />
+                <Label id="carTypeSUVLabel" alignment="CENTER" layoutX="393.0" layoutY="25.0" prefHeight="31.0" prefWidth="155.0" text="Car Type" />
+            </children></AnchorPane>
+    </items>
+</SplitPane>

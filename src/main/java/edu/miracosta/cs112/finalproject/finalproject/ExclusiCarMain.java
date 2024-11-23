@@ -11,6 +11,9 @@ public class ExclusiCarMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ExclusiCarMain.class.getResource("main-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 375);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static void main(String[] args) {
