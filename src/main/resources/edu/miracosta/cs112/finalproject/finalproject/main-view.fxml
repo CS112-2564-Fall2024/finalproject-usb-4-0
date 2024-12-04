@@ -26,6 +26,9 @@
                   <Font name="Segoe UI Black" size="24.0" />
                </font></Button>
             <ImageView fx:id="logoImage" fitHeight="124.0" fitWidth="155.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                <image>
+                    <Image url="@/resources/edu.miracosta.cs112.finalproject.finalproject/logo.png">
+                </image>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
          <children>
