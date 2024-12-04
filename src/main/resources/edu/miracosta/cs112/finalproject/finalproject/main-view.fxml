@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane fx:controller="edu.miracosta.cs112.finalproject.finalproject.ExclusiCarController" dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject.ExclusiCarController">
   <items>
     <AnchorPane fx:id="loginButton" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
@@ -34,7 +34,10 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
          <children>
-            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="292.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name" />
+            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="292.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font></Label>
             <Button fx:id="learnMoreTruckButton" layoutX="275.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleTruckLearnMoreButton" prefHeight="62.0" prefWidth="207.0" text="Learn More...">
                <font>
                   <Font name="Segoe UI Black" size="24.0" />
@@ -53,7 +56,10 @@
                   <Font name="Segoe UI Black" size="24.0" />
                </font>
             </Button>
-            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="842.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name" />
+            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="842.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font></Label>
          </children>
       </AnchorPane>
   </items>
