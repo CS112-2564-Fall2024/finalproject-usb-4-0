@@ -2,6 +2,8 @@
 
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -25,10 +27,10 @@
                <font>
                   <Font name="Segoe UI Black" size="24.0" />
                </font></Button>
-            <ImageView fx:id="logoImage" fitHeight="124.0" fitWidth="155.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
-                <image>
-                    <Image url="@/resources/edu.miracosta.cs112.finalproject.finalproject/logo.png">
-                </image>
+            <ImageView fx:id="logoImage" fitHeight="124.0" fitWidth="155.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@logo.png" />
+               </image></ImageView>
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
          <children>
@@ -38,8 +40,14 @@
                   <Font name="Segoe UI Black" size="24.0" />
                </font>
             </Button>
-            <ImageView fx:id="truckImage" fitHeight="400.0" fitWidth="400.0" layoutX="178.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="suvImage" fitHeight="400.0" fitWidth="400.0" layoutX="728.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="truckImage" fitHeight="400.0" fitWidth="400.0" layoutX="178.0" layoutY="70.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@truck.png" />
+               </image></ImageView>
+            <ImageView fx:id="suvImage" fitHeight="400.0" fitWidth="400.0" layoutX="728.0" layoutY="70.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@evsuv.png" />
+               </image></ImageView>
             <Button fx:id="learnMoreSUVButton" layoutX="825.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleSUVLearnMoreButton" prefHeight="62.0" prefWidth="207.0" text="Learn More...">
                <font>
                   <Font name="Segoe UI Black" size="24.0" />
