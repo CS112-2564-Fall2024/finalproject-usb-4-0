@@ -16,7 +16,5 @@ public class ExclusiCarMain extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
-        launch();
-    }
+    public static void main(String[] args) { launch(); }
 }
