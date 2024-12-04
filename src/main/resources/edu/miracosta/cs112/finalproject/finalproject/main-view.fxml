@@ -6,24 +6,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.19" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="602.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane fx:controller="edu.miracosta.cs112.finalproject.finalproject.ExclusiCarMain" dividerPositions="0.19" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="602.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <items>
-    <AnchorPane id="loginButton" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+    <AnchorPane fx:id="loginButton" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <Button id="homeButton" layoutX="191.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="Home" />
-            <Button id="aboutUsButton" layoutX="394.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="About Us" />
-            <Button id="contactButton" layoutX="597.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="Contact" />
-            <Button layoutX="830.0" layoutY="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="117.0" text="Login" />
-            <ImageView id="logoImage" fitHeight="103.0" fitWidth="106.0" layoutX="44.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="homeButton" layoutX="191.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="Home" />
+            <Button fx:id="aboutUsButton" layoutX="394.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="About Us" />
+            <Button fx:id="contactButton" layoutX="597.0" layoutY="54.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="197.0" text="Contact" />
+            <Button fx:id="login" layoutX="830.0" layoutY="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="117.0" text="Login" />
+            <ImageView fx:id="logoImage" fitHeight="103.0" fitWidth="106.0" layoutX="44.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <ImageView id="suvImage" fitHeight="233.0" fitWidth="236.0" layoutX="556.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
-            <Button id="learnMoreSUVButton" layoutX="571.0" layoutY="349.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="207.0" text="Learn More..." />
-            <Label id="suvNameLabel" alignment="CENTER" layoutX="597.0" layoutY="52.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
-            <Label id="truckNameLabel" alignment="CENTER" layoutX="217.0" layoutY="52.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
-            <Button id="learnMoreTruckButton" layoutX="191.0" layoutY="349.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="207.0" text="Learn More..." />
-            <ImageView id="truckImage" fitHeight="233.0" fitWidth="236.0" layoutX="176.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="suvImage" fitHeight="233.0" fitWidth="236.0" layoutX="556.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="learnMoreSUVButton" layoutX="571.0" layoutY="349.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="207.0" text="Learn More..." />
+            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="597.0" layoutY="52.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
+            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="217.0" layoutY="52.0" prefHeight="31.0" prefWidth="155.0" text="Car Name" />
+            <Button fx:id="learnMoreTruckButton" layoutX="191.0" layoutY="349.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="207.0" text="Learn More..." />
+            <ImageView fx:id="truckImage" fitHeight="233.0" fitWidth="236.0" layoutX="176.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
   </items>
