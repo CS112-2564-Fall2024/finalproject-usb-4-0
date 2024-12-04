@@ -47,7 +47,7 @@ public class ExclusiCarMain extends Application {
          */
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 375);
+        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setScene(scene);
         stage.show();
 
