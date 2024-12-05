@@ -14,8 +14,8 @@ public class EVSUV extends Vehicle {
     }
 
     // Full Constructor
-    public EVSUV(int seating, int gasMileage, String make, String model, int year, int topSpeed, double rentalPrice, int trunkSpace, int chargeTime) {
-        super(seating, gasMileage, make, model, year, topSpeed, rentalPrice);
+    public EVSUV(int seating, int mileRange, String make, String model, int year, int topSpeed, double rentalPrice, int trunkSpace, int chargeTime) {
+        super(seating, mileRange, make, model, year, topSpeed, rentalPrice);
         this.trunkSpace = trunkSpace;
         this.chargeTime = chargeTime;
     }
@@ -34,6 +34,11 @@ public class EVSUV extends Vehicle {
     }
     public void setChargeTime(int chargeTime) {
         this.chargeTime = chargeTime;
+    }
+
+    // Other Methods
+    public String toString() {
+        return String.format("Seating: %d\nEV Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph\nTrunk Space: %d cubic feet\nCharge Time (0%% → 100%%): %d minutes\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getTrunkSpace(), getChargeTime(), getRentalPrice());
     }
 
 }

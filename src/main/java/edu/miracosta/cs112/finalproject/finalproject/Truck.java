@@ -12,8 +12,8 @@ public class Truck extends Vehicle {
     }
 
     // Full Constructor
-    public Truck(int seating, int gasMileage, String make, String model, int year, int topSpeed, double rentalPrice, int towingCapacity) {
-        super(seating, gasMileage, make, model, year, topSpeed, rentalPrice);
+    public Truck(int seating, int mileRange, String make, String model, int year, int topSpeed, double rentalPrice, int towingCapacity) {
+        super(seating, mileRange, make, model, year, topSpeed, rentalPrice);
         this.towingCapacity = towingCapacity;
     }
 
@@ -26,5 +26,11 @@ public class Truck extends Vehicle {
     public void setTowingCapacity(int towingCapacity) {
         this.towingCapacity = towingCapacity;
     }
+
+    // Other Methods
+    public String toString() {
+        return String.format("Seating: %d\nMile Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph\nTowing Capacity: %d\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getTowingCapacity(), getRentalPrice());
+    }
+
 
 }

@@ -4,7 +4,7 @@ public class Vehicle {
 
     // Instance Variables
     private int seating;
-    private int gasMileage;
+    private int mileRange;
     private String make;
     private String model;
     private int year;
@@ -14,7 +14,7 @@ public class Vehicle {
     // Default Constructor
     public Vehicle() {
         this.seating = 0;
-        this.gasMileage = 0;
+        this.mileRange = 0;
         this.make = "";
         this.model = "";
         this.year = 0;
@@ -23,9 +23,9 @@ public class Vehicle {
     }
 
     // Full constructor
-    public Vehicle(int seating, int gasMileage, String make, String model, int year, int topSpeed, double rentalPrice) {
+    public Vehicle(int seating, int mileRange, String make, String model, int year, int topSpeed, double rentalPrice) {
         this.seating = seating;
-        this.gasMileage = gasMileage;
+        this.mileRange = mileRange;
         this.make = make;
         this.model = model;
         this.year = year;
@@ -37,8 +37,8 @@ public class Vehicle {
     public int getSeating() {
         return seating;
     }
-    public int getGasMileage() {
-        return gasMileage;
+    public int getMileRange() {
+        return mileRange;
     }
     public String getMake() {
         return make;
@@ -60,8 +60,8 @@ public class Vehicle {
     public void setSeating(int seating) {
         this.seating = seating;
     }
-    public void setGasMileage(int gasMileage) {
-        this.gasMileage = gasMileage;
+    public void setMileRange(int mileRange) {
+        this.mileRange = this.mileRange;
     }
     public void setMake(String make) {
         this.make = make;
@@ -79,6 +79,9 @@ public class Vehicle {
         this.rentalPrice = rentalPrice;
     }
 
-
+    // Other Methods
+    public String toString() {
+        return String.format("Seating: %d\nMile Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getRentalPrice());
+    }
 
 }
