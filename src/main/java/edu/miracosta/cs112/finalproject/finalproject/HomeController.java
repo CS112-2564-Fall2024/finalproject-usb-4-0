@@ -22,20 +22,25 @@ public class HomeController {
     }
 
     @FXML
-    private void handleHomeButton() {
+    private void handleButtonAction(String fxmlResource, Label element){
         try {
-            FXMLLoader homeLoader = new FXMLLoader(getClass().getResource("home-view.fxml"));
+            FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlResource));
             Stage homeStage = new Stage();
             Scene scene = new Scene(homeLoader.load(), 1280, 720);
             homeStage.setScene(scene);
             homeStage.show();
 
-            Stage currentStage = (Stage) truckNameLabel.getScene().getWindow();
+            Stage currentStage = (Stage) element.getScene().getWindow();
             currentStage.close();
 
         } catch(IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void handleHomeButton() {
+        handleButtonAction("home-view.fxml", truckNameLabel);
     }
 
     @FXML
@@ -53,37 +58,11 @@ public class HomeController {
 
     @FXML
     private void handleTruckLearnMoreButton() {
-        try {
-            FXMLLoader truckLoader = new FXMLLoader(getClass().getResource("truck-view.fxml"));
-            Stage truckStage = new Stage();
-            Scene scene = new Scene(truckLoader.load(), 1280, 720);
-            truckStage.setScene(scene);
-            truckStage.show();
-
-            Stage currentStage = (Stage) suvNameLabel.getScene().getWindow();
-            currentStage.close();
-
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
-
+        handleButtonAction("truck-view.fxml", suvNameLabel);
     }
 
     @FXML
     private void handleSUVLearnMoreButton() {
-        try {
-            FXMLLoader suvLoader = new FXMLLoader(getClass().getResource("suv-view.fxml"));
-            Stage suvStage = new Stage();
-            Scene scene = new Scene(suvLoader.load(), 1280, 720);
-            suvStage.setScene(scene);
-            suvStage.show();
-
-            Stage currentStage = (Stage) truckNameLabel.getScene().getWindow();
-            currentStage.close();
-
-        } catch(IOException e) {
-            e.printStackTrace();
-        }
+        handleButtonAction("suv-view.fxml", truckNameLabel);
     }
-
 }

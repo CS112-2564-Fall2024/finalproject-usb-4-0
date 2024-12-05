@@ -17,23 +17,28 @@ public class TruckController {
         truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
     }
 
-
     @FXML
-    private void handleHomeButton() {
+    private void handleButtonAction(String fxmlResource, Label element){
         try {
-            FXMLLoader homeLoader = new FXMLLoader(getClass().getResource("home-view.fxml"));
+            FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlResource));
             Stage homeStage = new Stage();
             Scene scene = new Scene(homeLoader.load(), 1280, 720);
             homeStage.setScene(scene);
             homeStage.show();
 
-            Stage currentStage = (Stage) truckNameLabel.getScene().getWindow();
+            Stage currentStage = (Stage) element.getScene().getWindow();
             currentStage.close();
 
         } catch(IOException e) {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void handleHomeButton() {
+        handleButtonAction("home-view.fxml", truckNameLabel);
+    }
+
     @FXML
     private void handleAboutUsButton() {
         Platform.exit();
