@@ -10,11 +10,11 @@ import java.io.IOException;
 public class ExclusiCarMain extends Application {
 
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+    public void start(Stage homeStage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
-        stage.setScene(scene);
-        stage.show();
+        homeStage.setScene(scene);
+        homeStage.show();
     }
 
     public static void main(String[] args) { launch(); }
