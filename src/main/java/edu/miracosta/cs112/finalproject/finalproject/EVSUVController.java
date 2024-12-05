@@ -17,7 +17,6 @@ public class EVSUVController {
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
     }
 
-
     @FXML
     private void handleHomeButton() {
         try {
