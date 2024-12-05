@@ -34,7 +34,11 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
          <children>
-            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="292.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name" />
+            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+            </Label>
             <Button fx:id="learnMoreTruckButton" layoutX="275.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleTruckLearnMoreButton" prefHeight="62.0" prefWidth="207.0" text="Learn More...">
                <font>
                   <Font name="Segoe UI Black" size="24.0" />
@@ -53,7 +57,11 @@
                   <Font name="Segoe UI Black" size="24.0" />
                </font>
             </Button>
-            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="842.0" layoutY="20.0" prefHeight="50.0" prefWidth="171.0" text="Car Name" />
+            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="810.0" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
   </items>
