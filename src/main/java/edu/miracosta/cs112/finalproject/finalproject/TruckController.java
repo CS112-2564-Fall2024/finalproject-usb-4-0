@@ -38,10 +38,9 @@ public class TruckController {
     private void handleHomeButton() {
         handleButtonAction("home-view.fxml", truckNameLabel);
     }
-
     @FXML
     private void handleAboutUsButton() {
-        Platform.exit();
+        handleButtonAction("aboutus-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleContactButton() {

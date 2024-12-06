@@ -38,10 +38,9 @@ public class EVSUVController {
     private void handleHomeButton() {
         handleButtonAction("home-view.fxml", suvNameLabel);
     }
-
     @FXML
     private void handleAboutUsButton() {
-        Platform.exit();
+        handleButtonAction("aboutus-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleContactButton() {
