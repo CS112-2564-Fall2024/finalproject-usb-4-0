@@ -1,6 +1,5 @@
-package edu.miracosta.cs112.finalproject.finalproject.controllers;
+package edu.miracosta.cs112.finalproject.finalproject;
 
-import edu.miracosta.cs112.finalproject.finalproject.objectClasses.Truck;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,13 +8,15 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class TruckController {
-    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
+public class AboutUsController {
 
     @FXML
-    Label truckNameLabel;
+    Label aboutUsLabel;
+    @FXML
+    Label aboutUsTitleLabel;
     public void initialize() {
-        truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
+        aboutUsLabel.setText("Here at ExclusiCar, we offer high end rentals for all your daily needs. Founded in 2950, we keep only the highest quality vehicles to suit your needs. Our small selection allows us to keep up with the interplanetary demands, allowing the customer to get the same experience throughout the solar system.");
+        aboutUsTitleLabel.setText("About Us");
     }
 
     @FXML
@@ -37,20 +38,19 @@ public class TruckController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", truckNameLabel);
+        handleButtonAction("home-view.fxml", aboutUsLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", truckNameLabel);
+        handleButtonAction("aboutus-view.fxml", aboutUsLabel);
     }
     @FXML
     private void handleContactButton() {
-        handleButtonAction("contact-view.fxml", truckNameLabel);
+        handleButtonAction("contact-view.fxml", aboutUsLabel);
     }
     @FXML
     private void handleLoginButton() {
         Platform.exit();
     }
-
 
 }

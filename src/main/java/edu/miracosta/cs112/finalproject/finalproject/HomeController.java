@@ -1,4 +1,4 @@
-package edu.miracosta.cs112.finalproject.finalproject.controllers;
+package edu.miracosta.cs112.finalproject.finalproject;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -8,15 +8,18 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class AboutUsController {
+public class HomeController {
+
+    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
+    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
 
     @FXML
-    Label aboutUsLabel;
+    Label truckNameLabel;
     @FXML
-    Label aboutUsTitleLabel;
+    Label suvNameLabel;
     public void initialize() {
-        aboutUsLabel.setText("Here at ExclusiCar, we offer high end rentals for all your daily needs. Founded in 2950, we keep only the highest quality vehicles to suit your needs. Our small selection allows us to keep up with the interplanetary demands, allowing the customer to get the same experience throughout the solar system.");
-        aboutUsTitleLabel.setText("About Us");
+        truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
+        suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
     }
 
     @FXML
@@ -38,19 +41,26 @@ public class AboutUsController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", aboutUsLabel);
+        handleButtonAction("home-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", aboutUsLabel);
+        handleButtonAction("aboutus-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleContactButton() {
-        handleButtonAction("contact-view.fxml", aboutUsLabel);
+        handleButtonAction("contact-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleLoginButton() {
         Platform.exit();
     }
-
+    @FXML
+    private void handleTruckLearnMoreButton() {
+        handleButtonAction("truck-view.fxml", suvNameLabel);
+    }
+    @FXML
+    private void handleSUVLearnMoreButton() {
+        handleButtonAction("suv-view.fxml", truckNameLabel);
+    }
 }

@@ -1,7 +1,5 @@
-package edu.miracosta.cs112.finalproject.finalproject.controllers;
+package edu.miracosta.cs112.finalproject.finalproject;
 
-import edu.miracosta.cs112.finalproject.finalproject.objectClasses.EVSUV;
-import edu.miracosta.cs112.finalproject.finalproject.objectClasses.Truck;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,17 +8,12 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class HomeController {
-
-    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
+public class EVSUVController {
     EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
 
     @FXML
-    Label truckNameLabel;
-    @FXML
     Label suvNameLabel;
     public void initialize() {
-        truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
     }
 
@@ -43,26 +36,20 @@ public class HomeController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", truckNameLabel);
+        handleButtonAction("home-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", truckNameLabel);
+        handleButtonAction("aboutus-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleContactButton() {
-        handleButtonAction("contact-view.fxml", truckNameLabel);
+        handleButtonAction("contact-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleLoginButton() {
         Platform.exit();
     }
-    @FXML
-    private void handleTruckLearnMoreButton() {
-        handleButtonAction("truck-view.fxml", suvNameLabel);
-    }
-    @FXML
-    private void handleSUVLearnMoreButton() {
-        handleButtonAction("suv-view.fxml", truckNameLabel);
-    }
+
+
 }
