@@ -1,4 +1,4 @@
-package edu.miracosta.cs112.finalproject.finalproject.controllers;
+package edu.miracosta.cs112.finalproject.finalproject;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
