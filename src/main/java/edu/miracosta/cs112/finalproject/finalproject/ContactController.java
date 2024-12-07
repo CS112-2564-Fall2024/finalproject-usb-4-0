@@ -15,8 +15,10 @@ public class ContactController {
     @FXML
     Label contactTitleLabel;
     public void initialize() {
-        contactLabel.setText("How Can We Help?\nReach Us Anytime\nEmail: For further assistance, contact rentalhelp@exclusicar.com.\nLive Chat: Access our 24/7 holographic support by clicking the \"Chat Now\" button on your dashboard.\n" +
-                "Call Us: Speak directly with a support agent at 1-800-EXCLUSI (1-800-398-5874).\nVisit Our Main Hub\nOur global headquarters is located at:\nExclusiCar Orbitron Tower\nSkyline 450, New Neo-Tokyo, Earth, 3000 AD.");
+        contactLabel.setText("How Can We Help?\nReach Us Anytime\nEmail: For further assistance, contact rentalhelp@exclusicar.com.\n" +
+                "Live Chat: Access our 24/7 holographic support by clicking the \"Chat Now\" button on your dashboard.\n" +
+                "Call Us: Speak directly with a support agent at 1-800-EXCLUSI (1-800-398-5874).\nVisit Our Main Hub\nOur global headquarters is located at:\n" +
+                "ExclusiCar Orbitron Tower\nSkyline 450, New Neo-Tokyo, Earth, 3000 AD.");
         contactTitleLabel.setText("Contact");
     }
 

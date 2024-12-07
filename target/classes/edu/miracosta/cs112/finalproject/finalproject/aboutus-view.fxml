@@ -38,9 +38,9 @@
         </AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
             <children>
-                <Label fx:id="aboutUsLabel" alignment="CENTER" layoutX="307.0" layoutY="93.0" prefHeight="385.0" prefWidth="665.0" text="Description Label" textAlignment="JUSTIFY" wrapText="true">
+                <Label fx:id="aboutUsLabel" alignment="CENTER" layoutX="236.0" layoutY="93.0" prefHeight="476.0" prefWidth="806.0" text="Description Label" wrapText="true">
                     <font>
-                        <Font name="Segoe UI Black" size="30.0" />
+                        <Font name="Segoe UI Black" size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="aboutUsTitleLabel" layoutX="547.0" layoutY="40.0" text="Title Label" textAlignment="CENTER" wrapText="true">

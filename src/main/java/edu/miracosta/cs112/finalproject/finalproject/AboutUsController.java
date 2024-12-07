@@ -15,7 +15,11 @@ public class AboutUsController {
     @FXML
     Label aboutUsTitleLabel;
     public void initialize() {
-        aboutUsLabel.setText("Here at ExclusiCar, we offer high end rentals for all your daily needs. Founded in 2950, we keep only the highest quality vehicles to suit your needs. Our small selection allows us to keep up with the interplanetary demands, allowing the customer to get the same experience throughout the solar system.");
+        aboutUsLabel.setText("Welcome to ExclusiCar, your gateway to the future of travel. Since 2500, we've revolutionized transportation, offering eco-friendly," +
+                "AI-driven vehicles for every journey—whether on Earth, Mars, or beyond.\nWhy Choose Us?\nGalactic Reach: Rentals available across the solar system.\n" +
+                "Smart Fleet: AI-powered vehicles tailored to your needs.\nEco-Conscious: Sustainable technology for a cleaner universe.\nCustom Rides: Hovercars, " +
+                "deep-sea pods, and more.\nFrom humble beginnings on Earth to leading interplanetary mobility, ExclusiCar is your partner in exploration. Travel smarter. " +
+                "Travel the future. \uD83C\uDF0C\n\n");
         aboutUsTitleLabel.setText("About Us");
     }
 
