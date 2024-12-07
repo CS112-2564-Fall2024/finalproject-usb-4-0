@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject.ContactController">
+<SplitPane dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject.ContactController">
     <items>
         <AnchorPane fx:id="loginButton" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
             <children>
@@ -38,14 +38,19 @@
         </AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
             <children>
-                <Label fx:id="contactTitleLabel" layoutX="548.0" layoutY="17.0" text="Title Label" textAlignment="CENTER" wrapText="true">
+                <Label fx:id="contactTitleLabel" layoutX="547.0" layoutY="17.0" text="Title Label" textAlignment="CENTER" wrapText="true">
                     <font>
                         <Font name="Segoe UI Black" size="36.0" />
                     </font>
                 </Label>
-                <Label fx:id="contactLabel" alignment="CENTER" layoutX="206.0" layoutY="70.0" prefHeight="500.0" prefWidth="870.0" text="Description Label" wrapText="true">
+                <Label fx:id="howCanWeHelpLabel" alignment="CENTER_LEFT" layoutX="205.0" layoutY="115.0" prefHeight="51.0" prefWidth="870.0" text="How Can We Help Label" wrapText="true">
                     <font>
-                        <Font name="Segoe UI Black" size="25.0" />
+                        <Font name="Segoe UI Black" size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="contactLabel" alignment="CENTER_LEFT" layoutX="205.0" layoutY="200.0" prefHeight="366.0" prefWidth="870.0" text="Description Label" wrapText="true">
+                    <font>
+                        <Font name="Segoe UI" size="25.0" />
                     </font>
                 </Label>
             </children>

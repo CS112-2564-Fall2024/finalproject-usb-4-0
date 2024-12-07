@@ -25,6 +25,7 @@ public class HomeController {
     @FXML
     private void handleButtonAction(String fxmlResource, Label element){
         try {
+
             FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlResource));
             Stage homeStage = new Stage();
             Scene scene = new Scene(homeLoader.load(), 1280, 720);

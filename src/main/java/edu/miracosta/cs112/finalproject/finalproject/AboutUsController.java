@@ -18,6 +18,7 @@ public class AboutUsController {
     Label aboutUsTitleLabel;
     @FXML
     Label whyUsLabel;
+
     public void initialize() {
         aboutUsTitleLabel.setText("About Us");
         aboutUsLabel1.setText("Welcome to ExclusiCar, the future of car rentals. Founded in 2500 and reimagined for the year 3000, " +
