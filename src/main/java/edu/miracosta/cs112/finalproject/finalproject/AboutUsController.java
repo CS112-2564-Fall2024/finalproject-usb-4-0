@@ -11,12 +11,24 @@ import java.io.IOException;
 public class AboutUsController {
 
     @FXML
-    Label aboutUsLabel;
+    Label aboutUsLabel1;
+    @FXML
+    Label aboutUsLabel2;
     @FXML
     Label aboutUsTitleLabel;
+    @FXML
+    Label whyUsLabel;
     public void initialize() {
-        aboutUsLabel.setText("Here at ExclusiCar, we offer high end rentals for all your daily needs. Founded in 2950, we keep only the highest quality vehicles to suit your needs. Our small selection allows us to keep up with the interplanetary demands, allowing the customer to get the same experience throughout the solar system.");
         aboutUsTitleLabel.setText("About Us");
+        aboutUsLabel1.setText("Welcome to ExclusiCar, the future of car rentals. Founded in 2500 and reimagined for the year 3000, " +
+                "our mission is simple: to revolutionize the way humanity (and beyond) moves. Whether you’re exploring Earth’s revitalized jungles, " +
+                "zipping between Martian colonies, or gliding through the rings of Saturn, ExclusiCar provides the ultimate transportation experience.");
+        whyUsLabel.setText("Why Choose Us?");
+        aboutUsLabel2.setText("\t•\tGalactic Reach: Rentals available across the solar system.\n" +
+                "\t•\tSmart Fleet: AI-powered vehicles tailored to your needs.\n" +
+                "\t•\tEco-Conscious: Sustainable technology for a cleaner universe.\n" +
+                "\t•\tCustom Rides: Hovercars, deep-sea pods, and more.\n\n" +
+                "From humble beginnings on Earth to leading interplanetary mobility, ExclusiCar is your partner in exploration. Travel smarter. Travel the future. 🌌");
     }
 
     @FXML
@@ -38,15 +50,15 @@ public class AboutUsController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", aboutUsLabel);
+        handleButtonAction("home-view.fxml", aboutUsLabel1);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", aboutUsLabel);
+        handleButtonAction("aboutus-view.fxml", aboutUsLabel1);
     }
     @FXML
     private void handleContactButton() {
-        handleButtonAction("contact-view.fxml", aboutUsLabel);
+        handleButtonAction("contact-view.fxml", aboutUsLabel1);
     }
     @FXML
     private void handleLoginButton() {
