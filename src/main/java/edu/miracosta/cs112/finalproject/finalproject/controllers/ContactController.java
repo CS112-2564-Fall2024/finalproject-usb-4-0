@@ -1,4 +1,4 @@
-package edu.miracosta.cs112.finalproject.finalproject;
+package edu.miracosta.cs112.finalproject.finalproject.controllers;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -8,13 +8,16 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class EVSUVController {
-    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
+public class ContactController {
 
     @FXML
-    Label suvNameLabel;
+    Label contactLabel;
+    @FXML
+    Label contactTitleLabel;
     public void initialize() {
-        suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
+        contactLabel.setText("How Can We Help?\nReach Us Anytime\nEmail: For further assistance, contact rentalhelp@exclusicar.com.\nLive Chat: Access our 24/7 holographic support by clicking the \"Chat Now\" button on your dashboard.\n" +
+                "Call Us: Speak directly with a support agent at 1-800-EXCLUSI (1-800-398-5874).\nVisit Our Main Hub\nOur global headquarters is located at:\nExclusiCar Orbitron Tower\nSkyline 450, New Neo-Tokyo, Earth, 3000 AD.");
+        contactTitleLabel.setText("Contact");
     }
 
     @FXML
@@ -36,20 +39,19 @@ public class EVSUVController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", suvNameLabel);
+        handleButtonAction("home-view.fxml", contactLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", suvNameLabel);
+        handleButtonAction("aboutus-view.fxml", contactLabel);
     }
     @FXML
     private void handleContactButton() {
-        Platform.exit();
+        handleButtonAction("contact-view.fxml", contactLabel);
     }
     @FXML
     private void handleLoginButton() {
         Platform.exit();
     }
-
 
 }

@@ -1,5 +1,6 @@
-package edu.miracosta.cs112.finalproject.finalproject;
+package edu.miracosta.cs112.finalproject.finalproject.controllers;
 
+import edu.miracosta.cs112.finalproject.finalproject.objectClasses.EVSUV;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,15 +9,13 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class AboutUsController {
+public class EVSUVController {
+    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
 
     @FXML
-    Label aboutUsLabel;
-    @FXML
-    Label aboutUsTitleLabel;
+    Label suvNameLabel;
     public void initialize() {
-        aboutUsLabel.setText("Here at ExclusiCar, we offer high end rentals for all your daily needs. Founded in 2950, we keep only the highest quality vehicles to suit your needs. Our small selection allows us to keep up with the interplanetary demands, allowing the customer to get the same experience throughout the solar system.");
-        aboutUsTitleLabel.setText("About Us");
+        suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
     }
 
     @FXML
@@ -38,19 +37,20 @@ public class AboutUsController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", aboutUsLabel);
+        handleButtonAction("home-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", aboutUsLabel);
+        handleButtonAction("aboutus-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleContactButton() {
-        Platform.exit();
+        handleButtonAction("contact-view.fxml", suvNameLabel);
     }
     @FXML
     private void handleLoginButton() {
         Platform.exit();
     }
+
 
 }
