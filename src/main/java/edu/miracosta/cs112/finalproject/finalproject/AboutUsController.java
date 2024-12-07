@@ -62,8 +62,8 @@ public class AboutUsController {
         handleButtonAction("contact-view.fxml", aboutUsLabel1);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", aboutUsLabel1);
     }
 
 }

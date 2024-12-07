@@ -57,8 +57,8 @@ public class ContactController {
         handleButtonAction("contact-view.fxml", contactLabel);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", contactLabel);
     }
 
 }
