@@ -38,7 +38,7 @@
         </AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
             <children>
-                <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="">
+                <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="250.0" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="NovaFlux Aurora">
                     <font>
                         <Font name="Segoe UI Black" size="25.0" />
                     </font>
