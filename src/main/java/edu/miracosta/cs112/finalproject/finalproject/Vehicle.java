@@ -1,6 +1,6 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     // Instance Variables
     private int seating;
@@ -61,7 +61,7 @@ public class Vehicle {
         this.seating = seating;
     }
     public void setMileRange(int mileRange) {
-        this.mileRange = this.mileRange;
+        this.mileRange = mileRange;
     }
     public void setMake(String make) {
         this.make = make;
@@ -80,8 +80,7 @@ public class Vehicle {
     }
 
     // Other Methods
-    public String toString() {
-        return String.format("Seating: %d\nMile Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getRentalPrice());
-    }
+    public abstract String toString();
+    public abstract double calculateTotalPrice(int days);
 
 }

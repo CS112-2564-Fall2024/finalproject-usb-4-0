@@ -38,9 +38,12 @@ public class EVSUV extends Vehicle {
 
     // Other Methods
     public String toString() {
-        return String.format("Seating: %d\nEV Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph" +
-                "\nTrunk Space: %d cubic feet\nCharge Time (0%% → 100%%): %d minutes\n\nRental Price: $%.2f/day",
+        return String.format("Seating: %d\n\nEV Range: %d\n\nMake: %s\n\nModel: %s\n\nYear: %d\n\nTop Speed: %d mph" +
+                "\n\nTrunk Space: %d cubic feet\n\nCharge Time (0%% → 100%%): %d minutes\n\n\nRental Price: $%.2f/day",
                 getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getTrunkSpace(), getChargeTime(), getRentalPrice());
+    }
+    public double calculateTotalPrice(int days) {
+        return (getRentalPrice() * Double.valueOf(days));
     }
 
 }

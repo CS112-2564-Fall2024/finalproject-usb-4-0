@@ -1,6 +1,5 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

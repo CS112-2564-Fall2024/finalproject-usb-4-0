@@ -1,6 +1,5 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,8 +12,11 @@ public class TruckController {
 
     @FXML
     Label truckNameLabel;
+    @FXML
+    Label infoLabel;
     public void initialize() {
         truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
+        infoLabel.setText(truck.toString());
     }
 
     @FXML

@@ -1,6 +1,5 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,8 +12,11 @@ public class EVSUVController {
 
     @FXML
     Label suvNameLabel;
+    @FXML
+    Label infoLabel;
     public void initialize() {
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
+        infoLabel.setText(suv.toString());
     }
 
     @FXML

@@ -29,9 +29,12 @@ public class Truck extends Vehicle {
 
     // Other Methods
     public String toString() {
-        return String.format("Seating: %d\nMile Range: %d\nMake: %s\nModel: %s\nYear: %d\nTop Speed: %d mph\n" +
-                "Towing Capacity: %d\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(),
+        return String.format("Seating: %d\n\nMile Range: %d\n\nMake: %s\n\nModel: %s\n\nYear: %d\n\nTop Speed: %d mph\n\n" +
+                "Towing Capacity: %d\n\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(),
                 getModel(), getYear(), getTopSpeed(), getTowingCapacity(), getRentalPrice());
+    }
+    public double calculateTotalPrice(int days) {
+        return (getRentalPrice() * Double.valueOf(days));
     }
 
 
