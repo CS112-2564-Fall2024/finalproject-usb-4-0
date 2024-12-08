@@ -74,7 +74,6 @@ public class SignupController {
 
         handleButtonAction("home-view.fxml", signupTitleLabel);
 
-
     }
 
 }
