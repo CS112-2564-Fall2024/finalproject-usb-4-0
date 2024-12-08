@@ -18,6 +18,7 @@ public class AboutUsController {
     Label aboutUsTitleLabel;
     @FXML
     Label whyUsLabel;
+
     public void initialize() {
         aboutUsTitleLabel.setText("About Us");
         aboutUsLabel1.setText("Welcome to ExclusiCar, the future of car rentals. Founded in 2500 and reimagined for the year 3000, " +
@@ -61,8 +62,8 @@ public class AboutUsController {
         handleButtonAction("contact-view.fxml", aboutUsLabel1);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", aboutUsLabel1);
     }
 
 }

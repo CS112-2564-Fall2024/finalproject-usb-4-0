@@ -25,6 +25,7 @@ public class HomeController {
     @FXML
     private void handleButtonAction(String fxmlResource, Label element){
         try {
+
             FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlResource));
             Stage homeStage = new Stage();
             Scene scene = new Scene(homeLoader.load(), 1280, 720);
@@ -52,12 +53,12 @@ public class HomeController {
         handleButtonAction("contact-view.fxml", truckNameLabel);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleTruckLearnMoreButton() {
-        handleButtonAction("truck-view.fxml", suvNameLabel);
+        handleButtonAction("truck-view.fxml", truckNameLabel);
     }
     @FXML
     private void handleSUVLearnMoreButton() {

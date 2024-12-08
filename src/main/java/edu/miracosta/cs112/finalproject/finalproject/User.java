@@ -7,6 +7,8 @@ public class User {
     private String lastName;
     private int birthYear;
     private int birthMonth;
+    private int birthDay;
+    private String email;
     private String driversLicenseNum;
 
     // Default Constructor
@@ -15,15 +17,19 @@ public class User {
         lastName = "";
         birthYear = 0;
         birthMonth = 0;
+        birthDay = 0;
+        email = "";
         driversLicenseNum = "";
     }
 
     // Full Constructor
-    public User(String firstName, String lastName, int birthYear, int birthMonth, String driversLicenseNum) {
+    public User(String firstName, String lastName, int birthYear, int birthMonth, int birthDay, String email, String driversLicenseNum) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthYear = birthYear;
         this.birthMonth = birthMonth;
+        this.birthDay = birthDay;
+        this.email = email;
         this.driversLicenseNum = driversLicenseNum;
     }
 
@@ -39,6 +45,10 @@ public class User {
     }
     public int getBirthMonth() {
         return birthMonth;
+    }
+    public int getBirthDay() { return birthDay; }
+    public String getEmail() {
+        return email;
     }
     public String getDriversLicenseNum() {
         return driversLicenseNum;
@@ -56,6 +66,12 @@ public class User {
     }
     public void setBirthMonth(int birthMonth) {
         this.birthMonth = birthMonth;
+    }
+    public void setBirthDay(int birthDay) {
+        this.birthDay = birthDay;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
     public void setDriversLicenseNum(String driversLicenseNum) {
         this.driversLicenseNum = driversLicenseNum;

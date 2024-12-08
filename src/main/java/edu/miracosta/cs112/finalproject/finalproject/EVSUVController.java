@@ -47,9 +47,8 @@ public class EVSUVController {
         handleButtonAction("contact-view.fxml", suvNameLabel);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", suvNameLabel);
     }
-
 
 }

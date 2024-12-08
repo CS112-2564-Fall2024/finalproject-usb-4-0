@@ -47,9 +47,8 @@ public class TruckController {
         handleButtonAction("contact-view.fxml", truckNameLabel);
     }
     @FXML
-    private void handleLoginButton() {
-        Platform.exit();
+    private void handleSignupButton() {
+        handleButtonAction("signup-view.fxml", truckNameLabel);
     }
-
 
 }
