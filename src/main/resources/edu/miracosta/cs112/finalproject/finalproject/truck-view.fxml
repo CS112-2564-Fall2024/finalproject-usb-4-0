@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane fx:controller="edu.miracosta.cs112.finalproject.finalproject.TruckController" dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs112.finalproject.finalproject.TruckController">
    <items>
 	   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
 		   <children>
@@ -48,6 +49,11 @@
 				  <Image url="@truck.png" />
 			   </image>
 			</ImageView>
+            <Label fx:id="infoLabel" layoutX="622.0" layoutY="70.0" prefHeight="50.0" prefWidth="473.0" text="info">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
 		 </children>
 	  </AnchorPane>
    </items>
