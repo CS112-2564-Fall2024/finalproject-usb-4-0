@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:controller="edu.miracosta.cs112.finalproject.finalproject.HomeController" dividerPositions="0.2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="homeButton" layoutX="186.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="50.0" prefWidth="290.0" text="Home">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutUsButton" layoutX="486.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleAboutUsButton" prefHeight="50.0" prefWidth="290.0" text="About Us">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="contactButton" layoutX="786.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleContactButton" prefHeight="50.0" prefWidth="290.0" text="Contact">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="signupButton" layoutX="1089.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="50.0" prefWidth="180.0" text="Sign Up">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="userInfoButton" layoutX="1089.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleUserInfoButton" prefHeight="50.0" prefWidth="180.0" text="User Info">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="logoImage" fitHeight="124.0" fitWidth="155.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
+         <children>
+            <Label fx:id="truckNameLabel" alignment="CENTER" layoutX="228.0" layoutY="20.0" prefHeight="50.0" prefWidth="300.0" text="Titanium Commander">
+               <font>
+                  <Font name="Segoe UI Black" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="truckImage" fitHeight="400.0" fitWidth="400.0" layoutX="178.0" layoutY="70.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@truck.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="learnMoreTruckButton" layoutX="275.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleTruckLearnMoreButton" prefHeight="62.0" prefWidth="207.0" text="Learn More...">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="suvNameLabel" alignment="CENTER" layoutX="810.0" layoutY="20.0" prefHeight="50.0" prefWidth="250.0" text="NovaFlux Aurora">
+               <font>
+                  <Font name="Segoe UI Black" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="suvImage" fitHeight="400.0" fitWidth="400.0" layoutX="728.0" layoutY="70.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@evsuv.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="learnMoreSUVButton" layoutX="825.0" layoutY="478.0" mnemonicParsing="false" onAction="#handleSUVLearnMoreButton" prefHeight="62.0" prefWidth="207.0" text="Learn More...">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
