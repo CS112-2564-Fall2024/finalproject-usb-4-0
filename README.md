@@ -6,13 +6,14 @@ This program is meant to represent a user interface for a car rental company tha
 
 The buttons at the top are used as directions to view different pages of the program. The top right has a login button that is designated for storing the user’s information, DL#, and age to verify that they are eligible to rent a car. Other pages display company information, contact information, and vehicle information so that the user can make an informed decision about their rental. All of this data is stored within the classes and subclasses for easy recall from the controllers and main script.
 
-Our inspiration was somewhat random, but we are very happy with the end result. We used ChatGPT a bit to brainstorm ideas and come up with ways that we can implement all of the necessary ideas.
+Our inspiration was somewhat random, but we are very happy with the end result.
 
-UML from UD1: https://drive.google.com/file/d/1RRQBhg9OioT3A_tirmInlXllRWEoVKoh/view?usp=drive_link
+UML from UD1: ![UML UD1.drawio.png](src/main/resources/edu/miracosta/cs112/finalproject/finalproject/UML%20UD1.drawio.png)
 
-GUI Wireframe from UD2: https://drive.google.com/file/d/1PQsUFCnlAVtgP5YuGg5o3co6JDvZ52tU/view?usp=drive_link
+UML for UD3: ![UML UD3.drawio.png](src/main/resources/edu/miracosta/cs112/finalproject/finalproject/UML%20UD3.drawio.png)
 
-UML for UD3: https://docs.google.com/presentation/d/13OJHUwVRj5UPyn8LYqSkasIe6ahqaQV0QfSPzc6V5Cs/edit?usp=drive_link
+GUI Wireframe from UD2: [Wireframe (UD2).pptx](src/main/resources/edu/miracosta/cs112/finalproject/finalproject/Wireframe%20%28UD2%29.pptx)
 
-GUI Wireframe for UD3: https://docs.google.com/presentation/d/1WbUstuTR3f224fsEDdpsCmhRSn7WOValcOjHP5IjpVs/edit?usp=drive_link
+GUI Wireframe for UD3: [Wireframe (UD3).pptx](src/main/resources/edu/miracosta/cs112/finalproject/finalproject/Wireframe%20%28UD3%29.pptx)
 
+![UD3.gif](src/main/resources/edu/miracosta/cs112/finalproject/finalproject/UD3.gif)
