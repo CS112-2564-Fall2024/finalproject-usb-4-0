@@ -39,8 +39,16 @@ public class TruckController {
 
     @FXML
     private void handleReserveButton() {
-        reserveLabel.setText("Thank you for reserving!");
+
     }
+
+//    public void checkAge(int age) throws NotOldEnoughException {
+//        if (age < 21) {
+//            throw new NotOldEnoughException("You must be 18 or older.");
+//        } else {
+//            reserveLabel.setText("Thank you for reserving!");
+//        }
+//    }
 
     @FXML
     private void handleHomeButton() {

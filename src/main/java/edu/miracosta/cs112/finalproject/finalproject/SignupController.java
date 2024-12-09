@@ -227,7 +227,13 @@ public class SignupController {
                 return errorCount;
             }
             int value = Integer.parseInt(field.getText());
-            if (value <= 0) {
+            if (fieldName == "Year" && (value <= 0)) {
+                errorList[errorCount] = "Invalid " + fieldName;
+                errorCount += 1;
+            } else if (fieldName == "Month" && (value <= 0 || value > 12)) {
+                errorList[errorCount] = "Invalid " + fieldName;
+                errorCount += 1;
+            } else if (fieldName == "Day" && (value <= 0 || value > 31)) {
                 errorList[errorCount] = "Invalid " + fieldName;
                 errorCount += 1;
             }
