@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="AZ_3Og0b3dCWLXTcXCrc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="s4gW2ee3z8RKwVpYuk9V-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="325" y="250" />
+              <mxPoint x="393" y="250" />
+              <mxPoint x="393" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZ_3Og0b3dCWLXTcXCrc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="s4gW2ee3z8RKwVpYuk9V-3" target="s4gW2ee3z8RKwVpYuk9V-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="325" y="250" />
+              <mxPoint x="390" y="250" />
+              <mxPoint x="390" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-3" value="Vehicle (Abstract)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="120" y="240" width="205" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-18" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;- seating : int&lt;/font&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- gasMileage : int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- make : String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- model : String&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- year : int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- topSpeed : int&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- rentalPrice : double&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;div&gt;+ getSeating() : int&lt;/div&gt;&lt;div&gt;+ setSeating() : int&lt;/div&gt;&lt;div&gt;+ getGasMileage() : int&lt;/div&gt;&lt;div&gt;+ getGasMileage() : int&lt;/div&gt;&lt;div&gt;+ getMake() : String&lt;/div&gt;&lt;div&gt;+ setMake() : String&lt;/div&gt;&lt;div&gt;+ getModel() : String&lt;/div&gt;&lt;div&gt;+ setModel() : String&lt;/div&gt;&lt;div&gt;+ getYear() :&amp;nbsp;int&lt;/div&gt;&lt;div&gt;+ setYear() : int&lt;/div&gt;&lt;div&gt;+ getTopSpeed() : int&lt;/div&gt;&lt;div&gt;+ setTopSpeed() : int&lt;/div&gt;&lt;div&gt;+ getRentalPrice() : double&lt;/div&gt;&lt;div&gt;+ getRentalPrice() : double&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="s4gW2ee3z8RKwVpYuk9V-3">
+          <mxGeometry x="2.5" y="20" width="200" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-8" value="User (Inner Class in Home&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Controller)&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="750" y="240" width="254" height="428" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-20" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;- firstName : String&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;- lastName : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;- email : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;- driversLicenseNum : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;- birthYear : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;- birthMonth : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;- birthDay : int&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getFirstName() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setFirstName() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getLastName() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setLastName() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getEmail() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setEmail() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getDriversLicenseNum() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setDriversLicenseNum() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getBirthYear() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setBirthYear() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getBirthMonth() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setBirthMonth() : int&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ getBirthDay() : int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;+ setBirthDay(): int&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="s4gW2ee3z8RKwVpYuk9V-8">
+          <mxGeometry x="3" y="18" width="250" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-12" value="Truck" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="240" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-29" value="&lt;div style=&quot;font-size: 15px;&quot;&gt;- towingCapacity : int&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;+ getTowingCapacity() : int&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;+ setTowingCapacity() : int&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="s4gW2ee3z8RKwVpYuk9V-12">
+          <mxGeometry x="4.5" y="30" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-13" value="EV SUV" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="370" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-30" value="&lt;div style=&quot;font-size: 15px;&quot;&gt;- trunkSpace : int&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;&lt;div&gt;- chargeTime : int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getTrunkSpace() : int&lt;/div&gt;&lt;div&gt;+ setTrunkSpace() : int&lt;/div&gt;&lt;div&gt;+ getChargeTime() : int&lt;/div&gt;&lt;div&gt;+ setChargeTim&lt;span style=&quot;background-color: initial;&quot;&gt;e() : int&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="s4gW2ee3z8RKwVpYuk9V-13">
+          <mxGeometry x="2.25" y="25" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="s4gW2ee3z8RKwVpYuk9V-31" target="s4gW2ee3z8RKwVpYuk9V-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="s4gW2ee3z8RKwVpYuk9V-31" target="s4gW2ee3z8RKwVpYuk9V-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-31" value="ExclusiCarMain (Extends Applicatioon)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="390" y="-70" width="285" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ_3Og0b3dCWLXTcXCrc-0" value="Opens HomeController.fxml which is the&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;main&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;interface for the whole project shown&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;in our UD3 wireframe.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="s4gW2ee3z8RKwVpYuk9V-31">
+          <mxGeometry x="17.5" y="30" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s4gW2ee3z8RKwVpYuk9V-35" value="Custom exception for age called NotOldEnoughException: if under 21&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;do not allow user to rent&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="900" y="150" width="190" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
