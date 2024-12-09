@@ -13,22 +13,22 @@
     <items>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
             <children>
-                <Button fx:id="homeButton" layoutX="194.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="50.0" prefWidth="290.0" text="Home">
+                <Button fx:id="homeButton" layoutX="186.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="50.0" prefWidth="290.0" text="Home">
                     <font>
                         <Font name="Segoe UI Black" size="24.0" />
                     </font>
                 </Button>
-                <Button fx:id="aboutUsButton" layoutX="494.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleAboutUsButton" prefHeight="50.0" prefWidth="290.0" text="About Us">
+                <Button fx:id="aboutUsButton" layoutX="486.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleAboutUsButton" prefHeight="50.0" prefWidth="290.0" text="About Us">
                     <font>
                         <Font name="Segoe UI Black" size="24.0" />
                     </font>
                 </Button>
-                <Button fx:id="contactButton" layoutX="794.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleContactButton" prefHeight="50.0" prefWidth="290.0" text="Contact">
+                <Button fx:id="contactButton" layoutX="786.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleContactButton" prefHeight="50.0" prefWidth="290.0" text="Contact">
                     <font>
                         <Font name="Segoe UI Black" size="24.0" />
                     </font>
                 </Button>
-                <Button fx:id="userInfoButton" layoutX="1100.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleUserInfoButton" prefHeight="50.0" prefWidth="150.0" text="User Info">
+                <Button fx:id="userInfoButton" layoutX="1089.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleUserInfoButton" prefHeight="50.0" prefWidth="180.0" text="User Info">
                     <font>
                         <Font name="Segoe UI Black" size="24.0" />
                     </font>
@@ -42,7 +42,7 @@
         </AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="1219.0">
             <children>
-                <Label fx:id="signupTitleLabel" layoutX="547.0" layoutY="17.0" text="Title Label" textAlignment="CENTER" wrapText="true">
+                <Label fx:id="signupTitleLabel" alignment="CENTER" layoutX="404.0" layoutY="17.0" prefHeight="51.0" prefWidth="470.0" text="Sign Up" textAlignment="CENTER">
                     <font>
                         <Font name="Segoe UI Black" size="36.0" />
                     </font>
@@ -107,7 +107,7 @@
                         <Font name="Segoe UI" size="20.0" />
                     </font>
                 </TextField>
-                <Button fx:id="submitButton" layoutX="562.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="63.0" prefWidth="155.0" text="Submit">
+                <Button fx:id="submitButton" alignment="CENTER" layoutX="562.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="63.0" prefWidth="155.0" text="Submit" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="562.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="463.0">
                     <font>
                         <Font name="Segoe UI Black" size="30.0" />
                     </font>

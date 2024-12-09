@@ -33,9 +33,4 @@ public class Truck extends Vehicle {
                 "Towing Capacity: %d\n\n\nRental Price: $%.2f/day", getSeating(), getMileRange(), getMake(),
                 getModel(), getYear(), getTopSpeed(), getTowingCapacity(), getRentalPrice());
     }
-    public double calculateTotalPrice(int days) {
-        return (getRentalPrice() * Double.valueOf(days));
-    }
-
-
 }

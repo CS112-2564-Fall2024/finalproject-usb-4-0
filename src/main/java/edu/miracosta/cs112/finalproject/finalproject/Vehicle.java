@@ -81,6 +81,5 @@ public abstract class Vehicle {
 
     // Other Methods
     public abstract String toString();
-    public abstract double calculateTotalPrice(int days);
 
 }

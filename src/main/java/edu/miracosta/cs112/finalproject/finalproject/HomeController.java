@@ -1,9 +1,9 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -97,13 +97,19 @@ public class HomeController {
     Label truckNameLabel;
     @FXML
     Label suvNameLabel;
+    @FXML
+    Button signupButton;
+
     public void initialize() {
         truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
+        if (HomeController.user.getBirthYear() > 0) {
+            signupButton.setText("Change Info");
+        }
     }
 
     @FXML
-    private void handleButtonAction(String fxmlResource, Label element){
+    public void handleButtonAction(String fxmlResource, Label element){
         try {
 
             FXMLLoader homeLoader = new FXMLLoader(getClass().getResource(fxmlResource));

@@ -3,6 +3,7 @@ package edu.miracosta.cs112.finalproject.finalproject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -30,7 +31,11 @@ public class SignupController {
     boolean[] fieldsWithErrors = {false, false, false, false, false, false, false};
 
     public void initialize() {
-        signupTitleLabel.setText("Sign Up");
+        if (HomeController.user.getBirthYear() > 0) {
+            signupTitleLabel.setText("Change User Information");
+        } else {
+            signupTitleLabel.setText("Sign Up");
+        }
     }
 
     @FXML
@@ -54,17 +59,14 @@ public class SignupController {
     private void handleHomeButton() {
         handleButtonAction("home-view.fxml", signupTitleLabel);
     }
-
     @FXML
     private void handleAboutUsButton() {
         handleButtonAction("aboutus-view.fxml", signupTitleLabel);
     }
-
     @FXML
     private void handleContactButton() {
         handleButtonAction("contact-view.fxml", signupTitleLabel);
     }
-
     @FXML
     private void handleUserInfoButton() {
         handleButtonAction("userInfo-view.fxml", signupTitleLabel);
@@ -149,25 +151,21 @@ public class SignupController {
         for (int i = 0; i < fieldsWithErrors.length; i++) {
             fieldsWithErrors[i] = false;
         }
-
         if (firstNameField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[0] = true;
             numErrors += 1;
         }
-
         if (lastNameField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[1] = true;
             numErrors += 1;
         }
-
         if (emailField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[2] = true;
             numErrors += 1;
         }
-
         if (licenseNumberField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[3] = true;
@@ -185,8 +183,6 @@ public class SignupController {
                 numErrors = updatedErrors;
             }
         }
-
-        // Validate dobMonthField
         if (dobMonthField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[5] = true;
@@ -198,8 +194,6 @@ public class SignupController {
                 numErrors = updatedErrors;
             }
         }
-
-        // Validate dobDayField
         if (dobDayField.getText().isEmpty()) {
             errors[numErrors] = "Required";
             fieldsWithErrors[6] = true;
@@ -230,10 +224,12 @@ public class SignupController {
             if (fieldName == "Year" && (value <= 0)) {
                 errorList[errorCount] = "Invalid " + fieldName;
                 errorCount += 1;
-            } else if (fieldName == "Month" && (value <= 0 || value > 12)) {
+            }
+            else if (fieldName == "Month" && (value <= 0 || value > 12)) {
                 errorList[errorCount] = "Invalid " + fieldName;
                 errorCount += 1;
-            } else if (fieldName == "Day" && (value <= 0 || value > 31)) {
+            }
+            else if (fieldName == "Day" && (value <= 0 || value > 31)) {
                 errorList[errorCount] = "Invalid " + fieldName;
                 errorCount += 1;
             }

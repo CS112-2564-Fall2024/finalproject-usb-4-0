@@ -3,6 +3,7 @@ package edu.miracosta.cs112.finalproject.finalproject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -15,6 +16,8 @@ public class ContactController {
     Label contactTitleLabel;
     @FXML
     Label howCanWeHelpLabel;
+    @FXML
+    Button signupButton;
 
     public void initialize() {
         contactTitleLabel.setText("Contact");
@@ -24,6 +27,9 @@ public class ContactController {
                 "\t•\tCall Us: Speak directly with a support agent at 1-800-EXCLUSI\n\n" +
                 "Visit Our Main Hub:\n\nOur global headquarters is located at:\n" +
                 "ExclusiCar Orbitron Tower\nSkyline 450, New Neo-Tokyo, Earth, 3000 AD.");
+        if (HomeController.user.getBirthYear() > 0) {
+            signupButton.setText("Change Info");
+        }
     }
 
     @FXML

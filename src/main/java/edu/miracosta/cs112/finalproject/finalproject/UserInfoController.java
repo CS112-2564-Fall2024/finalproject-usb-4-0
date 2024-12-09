@@ -6,13 +6,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class UserInfoController {
 
     @FXML
     Label infoLabel;
+    @FXML
+    Button signupButton;
 
     public void initialize() {
         if (HomeController.user.getBirthYear() == 0) {
@@ -22,6 +23,7 @@ public class UserInfoController {
                     HomeController.user.getFirstName(), HomeController.user.getLastName(), HomeController.user.getEmail(),
                     HomeController.user.getDriversLicenseNum(), HomeController.user.getBirthMonth(), HomeController.user.getBirthDay(),
                     HomeController.user.getBirthYear()));
+            signupButton.setText("Change Info");
         }
     }
 

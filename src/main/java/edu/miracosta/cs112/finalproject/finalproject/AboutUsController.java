@@ -3,6 +3,7 @@ package edu.miracosta.cs112.finalproject.finalproject;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -17,6 +18,8 @@ public class AboutUsController {
     Label aboutUsTitleLabel;
     @FXML
     Label whyUsLabel;
+    @FXML
+    Button signupButton;
 
     public void initialize() {
         aboutUsTitleLabel.setText("About Us");
@@ -29,6 +32,9 @@ public class AboutUsController {
                 "\t•\tEco-Conscious: Sustainable technology for a cleaner universe.\n" +
                 "\t•\tCustom Rides: Hovercars, deep-sea pods, and more.\n\n" +
                 "From humble beginnings on Earth to leading interplanetary mobility, ExclusiCar is your partner in exploration. Travel smarter. Travel the future. 🌌");
+        if (HomeController.user.getBirthYear() > 0) {
+            signupButton.setText("Change Info");
+        }
     }
 
     @FXML
