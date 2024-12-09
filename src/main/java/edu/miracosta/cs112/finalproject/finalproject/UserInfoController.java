@@ -15,12 +15,15 @@ public class UserInfoController {
     Label infoLabel;
 
     public void initialize() {
-        infoLabel.setText(String.format("First Name: %s\n\nLast Name: %s\n\nEmail: %s\n\nDriver's License #: %s\n\nDate Of Birth: %d/%d/%d",
-                SignupController.user.getFirstName(), SignupController.user.getLastName(), SignupController.user.getEmail(),
-                SignupController.user.getDriversLicenseNum(), SignupController.user.getBirthMonth(), SignupController.user.getBirthDay(),
-                SignupController.user.getBirthYear()));
+        if (SignupController.user.getBirthYear() == 0) {
+            infoLabel.setText("Sign Up to show User Information");
+        } else {
+            infoLabel.setText(String.format("First Name: %s\n\nLast Name: %s\n\nEmail: %s\n\nDriver's License #: %s\n\nDate Of Birth: %d/%d/%d",
+                    SignupController.user.getFirstName(), SignupController.user.getLastName(), SignupController.user.getEmail(),
+                    SignupController.user.getDriversLicenseNum(), SignupController.user.getBirthMonth(), SignupController.user.getBirthDay(),
+                    SignupController.user.getBirthYear()));
+        }
     }
-
 
     @FXML
     private void handleButtonAction(String fxmlResource, Label element){

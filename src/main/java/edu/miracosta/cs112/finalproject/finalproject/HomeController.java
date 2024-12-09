@@ -10,8 +10,8 @@ import java.io.IOException;
 
 public class HomeController {
 
-    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
-    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
+    static Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
+    static EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
 
     @FXML
     Label truckNameLabel;
@@ -20,13 +20,6 @@ public class HomeController {
     public void initialize() {
         truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
-        SignupController.user.setFirstName("Sign Up to Show Details");
-        SignupController.user.setLastName("Sign Up to Show Details");
-        SignupController.user.setEmail("Sign Up to Show Details");
-        SignupController. user.setDriversLicenseNum("Sign Up to Show Details");
-        SignupController.user.setBirthYear(2000);
-        SignupController.user.setBirthMonth(1);
-        SignupController.user.setBirthDay(1);
     }
 
     @FXML

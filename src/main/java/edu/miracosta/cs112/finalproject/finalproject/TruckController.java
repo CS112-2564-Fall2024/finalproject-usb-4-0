@@ -8,15 +8,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TruckController {
-    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
 
     @FXML
     Label truckNameLabel;
     @FXML
     Label infoLabel;
     public void initialize() {
-        truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
-        infoLabel.setText(truck.toString());
+        truckNameLabel.setText(HomeController.truck.getMake() + " " + HomeController.truck.getModel());
+        infoLabel.setText(HomeController.truck.toString());
     }
 
     @FXML

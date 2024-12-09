@@ -8,15 +8,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class EVSUVController {
-    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
 
     @FXML
     Label suvNameLabel;
     @FXML
     Label infoLabel;
     public void initialize() {
-        suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
-        infoLabel.setText(suv.toString());
+        suvNameLabel.setText(HomeController.suv.getMake() + " " + HomeController.suv.getModel());
+        infoLabel.setText(HomeController.suv.toString());
     }
 
     @FXML
