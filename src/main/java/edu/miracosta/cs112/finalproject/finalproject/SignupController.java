@@ -27,7 +27,6 @@ public class SignupController {
     @FXML
     TextField dobDayField;
 
-    static User user = new User();
     boolean[] fieldsWithErrors = {false, false, false, false, false, false, false};
 
     public void initialize() {
@@ -81,13 +80,13 @@ public class SignupController {
 
             validateFields();
 
-            user.setFirstName(firstNameField.getText());
-            user.setLastName(lastNameField.getText());
-            user.setEmail(emailField.getText());
-            user.setDriversLicenseNum(licenseNumberField.getText());
-            user.setBirthYear(Integer.parseInt(dobYearField.getText()));
-            user.setBirthMonth(Integer.parseInt(dobMonthField.getText()));
-            user.setBirthDay(Integer.parseInt(dobDayField.getText()));
+            HomeController.user.setFirstName(firstNameField.getText());
+            HomeController.user.setLastName(lastNameField.getText());
+            HomeController.user.setEmail(emailField.getText());
+            HomeController.user.setDriversLicenseNum(licenseNumberField.getText());
+            HomeController.user.setBirthYear(Integer.parseInt(dobYearField.getText()));
+            HomeController.user.setBirthMonth(Integer.parseInt(dobMonthField.getText()));
+            HomeController.user.setBirthDay(Integer.parseInt(dobDayField.getText()));
 
             handleButtonAction("home-view.fxml", signupTitleLabel);
 
