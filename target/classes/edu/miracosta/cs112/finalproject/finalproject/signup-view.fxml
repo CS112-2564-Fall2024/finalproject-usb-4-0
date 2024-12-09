@@ -92,7 +92,7 @@
                         <Font name="Segoe UI" size="20.0" />
                     </font>
                 </TextField>
-                <TextField fx:id="dobYearField" layoutX="517.0" layoutY="377.0" prefHeight="51.0" prefWidth="155.0" promptText="YEAR (YYYY)">
+                <TextField fx:id="dobYearField" layoutX="517.0" layoutY="377.0" prefHeight="51.0" prefWidth="155.0" promptText="Year (YYYY)">
                     <font>
                         <Font name="Segoe UI" size="20.0" />
                     </font>
