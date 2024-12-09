@@ -89,8 +89,8 @@ public class HomeController {
 
     }
 
-    static Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
-    static EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
+    static Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 1000.00, 6900);
+    static EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 1200.00, 50, 30);
     static User user = new User();
 
     @FXML
