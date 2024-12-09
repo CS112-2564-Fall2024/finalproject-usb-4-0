@@ -13,6 +13,8 @@ public class EVSUVController {
     Label suvNameLabel;
     @FXML
     Label infoLabel;
+    @FXML
+    Label reserveLabel;
     public void initialize() {
         suvNameLabel.setText(HomeController.suv.getMake() + " " + HomeController.suv.getModel());
         infoLabel.setText(HomeController.suv.toString());
@@ -33,6 +35,11 @@ public class EVSUVController {
         } catch(IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void handleReserveButton() {
+        reserveLabel.setText("Thank you for reserving!");
     }
 
     @FXML
