@@ -1,26 +1,23 @@
 package edu.miracosta.cs112.finalproject.finalproject;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
-public class HomeController {
-
-    Truck truck = new Truck(5, 800, "Titanium", "Commander", 3000, 140, 100.00, 6900);
-    EVSUV suv = new EVSUV(8, 600, "NovaFlux", "Aurora", 2999, 169, 120.00, 50, 30);
+public class UserInfoController {
 
     @FXML
-    Label truckNameLabel;
-    @FXML
-    Label suvNameLabel;
+    Label infoLabel;
+
     public void initialize() {
-        truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
-        suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
+        infoLabel.setText("First Name:" + "Last Name:");
     }
+
 
     @FXML
     private void handleButtonAction(String fxmlResource, Label element){
@@ -42,31 +39,23 @@ public class HomeController {
 
     @FXML
     private void handleHomeButton() {
-        handleButtonAction("home-view.fxml", truckNameLabel);
+        handleButtonAction("home-view.fxml", infoLabel);
     }
     @FXML
     private void handleAboutUsButton() {
-        handleButtonAction("aboutus-view.fxml", truckNameLabel);
+        handleButtonAction("aboutus-view.fxml", infoLabel);
     }
     @FXML
     private void handleContactButton() {
-        handleButtonAction("contact-view.fxml", truckNameLabel);
+        handleButtonAction("contact-view.fxml", infoLabel);
     }
     @FXML
     private void handleSignupButton() {
-        handleButtonAction("signup-view.fxml", truckNameLabel);
+        handleButtonAction("signup-view.fxml", infoLabel);
     }
     @FXML
     private void handleUserInfoButton() {
-        handleButtonAction("userInfo-view.fxml", truckNameLabel);
-    }
-    @FXML
-    private void handleTruckLearnMoreButton() {
-        handleButtonAction("truck-view.fxml", truckNameLabel);
-    }
-    @FXML
-    private void handleSUVLearnMoreButton() {
-        handleButtonAction("suv-view.fxml", truckNameLabel);
+        handleButtonAction("userInfo-view.fxml", infoLabel);
     }
 
 }
