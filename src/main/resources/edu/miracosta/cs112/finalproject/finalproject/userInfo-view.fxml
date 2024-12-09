@@ -48,7 +48,7 @@
                         <Font name="Segoe UI Black" size="36.0" />
                     </font>
                 </Label>
-                <Label fx:id="infoLabel" layoutX="320.0" layoutY="41.0" prefHeight="502.0" prefWidth="639.0" text="info">
+                <Label fx:id="infoLabel" alignment="CENTER" layoutX="320.0" layoutY="41.0" prefHeight="502.0" prefWidth="639.0" text="info">
                     <font>
                         <Font name="Segoe UI Black" size="25.0" />
                     </font>

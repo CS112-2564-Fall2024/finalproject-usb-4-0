@@ -6,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class TruckController {
 
@@ -39,16 +41,34 @@ public class TruckController {
 
     @FXML
     private void handleReserveButton() {
-
+        try {
+            if (!(HomeController.user.getBirthYear() > 0)) {
+                throw new NotOldEnoughException("Sign up to reserve\n" + HomeController.truck.getMake() + " " + HomeController.truck.getModel() + ".");
+            } else {
+                int age = calculateAge(HomeController.user.getBirthYear(), HomeController.user.getBirthMonth(), HomeController.user.getBirthDay());
+                checkAge(age);
+            }
+        } catch (NotOldEnoughException noee){
+            reserveLabel.setText(noee.getMessage());
+        }
     }
 
-//    public void checkAge(int age) throws NotOldEnoughException {
-//        if (age < 21) {
-//            throw new NotOldEnoughException("You must be 18 or older.");
-//        } else {
-//            reserveLabel.setText("Thank you for reserving!");
-//        }
-//    }
+    public void checkAge(int age) throws NotOldEnoughException {
+        if (age < 21) {
+            throw new NotOldEnoughException("You must be 21 or\nolder to reserve.");
+        } else {
+            reserveLabel.setText("Thank you for reserving!");
+        }
+    }
+
+    public static int calculateAge(int birthYear, int birthMonth, int birthDay) {
+
+        LocalDate currentDate = LocalDate.now();
+        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
+        Period age = Period.between(birthDate, currentDate);
+
+        return age.getYears();
+    }
 
     @FXML
     private void handleHomeButton() {

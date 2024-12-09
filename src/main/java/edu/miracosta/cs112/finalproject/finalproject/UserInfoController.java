@@ -16,7 +16,7 @@ public class UserInfoController {
 
     public void initialize() {
         if (HomeController.user.getBirthYear() == 0) {
-            infoLabel.setText("Sign Up to show User Information");
+            infoLabel.setText("Sign Up to show User Information.");
         } else {
             infoLabel.setText(String.format("First Name: %s\n\nLast Name: %s\n\nEmail: %s\n\nDriver's License #: %s\n\nDate Of Birth: %d/%d/%d",
                     HomeController.user.getFirstName(), HomeController.user.getLastName(), HomeController.user.getEmail(),
