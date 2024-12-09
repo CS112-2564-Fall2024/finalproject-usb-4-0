@@ -27,7 +27,7 @@ public class SignupController {
     @FXML
     TextField dobDayField;
 
-    User user = new User();
+    static User user = new User();
     boolean[] fieldsWithErrors = {false, false, false, false, false, false, false};
 
     public void initialize() {

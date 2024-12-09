@@ -20,6 +20,13 @@ public class HomeController {
     public void initialize() {
         truckNameLabel.setText(truck.getMake() + " " + truck.getModel());
         suvNameLabel.setText(suv.getMake() + " " + suv.getModel());
+        SignupController.user.setFirstName("Sign Up to Show Details");
+        SignupController.user.setLastName("Sign Up to Show Details");
+        SignupController.user.setEmail("Sign Up to Show Details");
+        SignupController. user.setDriversLicenseNum("Sign Up to Show Details");
+        SignupController.user.setBirthYear(2000);
+        SignupController.user.setBirthMonth(1);
+        SignupController.user.setBirthDay(1);
     }
 
     @FXML
