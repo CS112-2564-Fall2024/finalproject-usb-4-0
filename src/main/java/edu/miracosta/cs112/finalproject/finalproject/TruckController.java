@@ -49,6 +49,10 @@ public class TruckController {
         handleButtonAction("contact-view.fxml", truckNameLabel);
     }
     @FXML
+    private void handleUserInfoButton() {
+        handleButtonAction("userInfo-view.fxml", truckNameLabel);
+    }
+    @FXML
     private void handleSignupButton() {
         handleButtonAction("signup-view.fxml", truckNameLabel);
     }

@@ -28,6 +28,11 @@
                         <Font name="Segoe UI Black" size="24.0" />
                     </font>
                 </Button>
+                <Button fx:id="userInfoButton" layoutX="1100.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleUserInfoButton" prefHeight="50.0" prefWidth="150.0" text="User Info">
+                    <font>
+                        <Font name="Segoe UI Black" size="24.0" />
+                    </font>
+                </Button>
                 <ImageView fx:id="logoImage" fitHeight="124.0" fitWidth="155.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" smooth="false">
                     <image>
                         <Image url="@logo.png" />

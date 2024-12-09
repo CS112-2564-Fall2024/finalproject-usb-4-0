@@ -67,6 +67,11 @@ public class SignupController {
     }
 
     @FXML
+    private void handleUserInfoButton() {
+        handleButtonAction("userInfo-view.fxml", signupTitleLabel);
+    }
+
+    @FXML
     private void handleSubmitButton() {
         try {
 

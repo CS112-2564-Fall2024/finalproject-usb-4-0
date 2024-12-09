@@ -25,7 +25,12 @@
 						<Font name="Segoe UI Black" size="24.0" />
 					</font>
 				</Button>
-				<Button fx:id="signupButton" layoutX="1138.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="50.0" prefWidth="125.0" text="Sign Up">
+				<Button fx:id="signupButton" layoutX="1100.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="50.0" prefWidth="150.0" text="Sign Up">
+					<font>
+						<Font name="Segoe UI Black" size="24.0" />
+					</font>
+				</Button>
+				<Button fx:id="userInfoButton" layoutX="1100.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleUserInfoButton" prefHeight="50.0" prefWidth="150.0" text="User Info">
 					<font>
 						<Font name="Segoe UI Black" size="24.0" />
 					</font>

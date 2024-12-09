@@ -64,5 +64,9 @@ public class AboutUsController {
     private void handleSignupButton() {
         handleButtonAction("signup-view.fxml", aboutUsLabel1);
     }
+    @FXML
+    private void handleUserInfoButton() {
+        handleButtonAction("userInfo-view.fxml", aboutUsLabel1);
+    }
 
 }

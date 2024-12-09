@@ -49,6 +49,10 @@ public class EVSUVController {
         handleButtonAction("contact-view.fxml", suvNameLabel);
     }
     @FXML
+    private void handleUserInfoButton() {
+        handleButtonAction("userInfo-view.fxml", suvNameLabel);
+    }
+    @FXML
     private void handleSignupButton() {
         handleButtonAction("signup-view.fxml", suvNameLabel);
     }

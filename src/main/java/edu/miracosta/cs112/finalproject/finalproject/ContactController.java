@@ -59,5 +59,9 @@ public class ContactController {
     private void handleSignupButton() {
         handleButtonAction("signup-view.fxml", contactLabel);
     }
+    @FXML
+    private void handleUserInfoButton() {
+        handleButtonAction("userInfo-view.fxml", contactLabel);
+    }
 
 }
