@@ -38,7 +38,7 @@ public class EVSUV extends Vehicle {
 
     // Other Methods
     public String toString() {
-        return String.format("Seating: %d\n\nEV Range: %d\n\nMake: %s\n\nModel: %s\n\nYear: %d\n\nTop Speed: %d mph" +
+        return String.format("Seating: %d People\n\nEV Range: %d Miles\n\nMake: %s\n\nModel: %s\n\nYear: %d\n\nTop Speed: %d mph" +
                 "\n\nTrunk Space: %d cubic feet\n\nCharge Time (0%% → 100%%): %d minutes\n\n\nRental Price: $%.2f/day",
                 getSeating(), getMileRange(), getMake(), getModel(), getYear(), getTopSpeed(), getTrunkSpace(), getChargeTime(), getRentalPrice());
     }
